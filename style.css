@@ -1,0 +1,191 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: larger;
+    color: #fff;
+}
+body ,html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-image: url("image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+#nav{
+    display: flex;
+    height: 100%;
+    width: 100%;
+   
+   
+}
+#navlist{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    line-height: 100px;
+    margin-left: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.game{
+      height: 13%;
+      mix-blend-mode: lighten;
+      margin-right: 70%;
+      position: fixed;
+    
+    }
+
+#nav-item{
+  
+   margin-top: 54%;
+   font-family: sans-serif;
+   text-align: center;
+   animation: anime 2s ;  
+text-decoration: underline gray 2px;
+   cursor: pointer;
+
+}
+
+#icon{
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    cursor: pointer;
+    animation: icon 2s infinite ;
+    
+}
+#icon1{
+    position: absolute;
+    top: 5%;
+    left: 90%; 
+    cursor: pointer;
+    animation: icon 2s infinite;
+}
+
+#nav-item:hover{
+     box-shadow: 3px 7px 30px 5px rgb(67, 173, 25);
+     
+     padding: 6px;
+     
+        }
+
+ @keyframes anime{
+    from{
+        transform: translateY(-400px);
+        opacity: 0;
+        
+    }
+    to{
+        transform: translateY(100px);
+        transition: all 1s ease-out;
+        opacity: 1;
+        
+    }
+}
+
+@keyframes icon{
+    from{
+        color: #ac9b00;
+    }
+    to{
+        color: rgb(155,100,30);
+    
+    }
+}
+     
+@media (max-width:768px) {
+    #icon1,#icon{
+      color: blue;
+      position: absolute;
+      left: 75%;
+      top: 2%;
+    }
+   
+    .game{
+      height: 90px;
+      padding-left: 15px;
+    }
+    #nav-item{
+        margin-left: 10%;
+        margin-right: 40%  ;
+        font-size: 3vh;
+        
+      
+    }
+   
+}
+@media (max-width:468px) 
+             {
+    #icon1,#icon {
+        position: absolute;
+        margin-left: 7%;
+        font-size: 3.6vh;
+        top: 1%;
+       display: flex;
+    }
+   
+    #nav-item{
+        margin-left: 20%;
+        font-size: 25px;
+        color: rgb(155,100,30);
+        width: fit-content;
+        text-decoration: underline grey ;
+    }
+   
+    .game{
+        height: 0.8em;
+         
+    
+    
+    }
+
+}
+@media (min-width:769px) and (max-width:1024px) {
+    #icon1,#icon{
+        color: rgb(230, 42, 42);
+        position:absolute;
+        right: 1%;
+        top: 2.8%;
+    }
+    #nav-item{
+        position: relative;
+        right: 65%;
+        font-size: 23px;
+        top: -8%;
+        
+    }
+   
+    .game{
+        height: 2em;
+       
+    }
+   
+}
+    #nav-item{
+        position: relative;
+        left: -60%;
+        color: #00ac73;
+    }
+    @media (min-width:820px) and (max-width:1000px) {
+        #nav-item{
+            color: #ac9b00;
+            padding: 10px;
+            
+        }
+        #navlist{
+            margin-top: 30%;
+        }
+        .game{
+            mix-blend-mode: lighten;
+        }
+    }
+
+
+
